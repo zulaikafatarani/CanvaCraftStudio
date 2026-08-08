@@ -1,0 +1,168 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="uXg_2jR0nxjqSl1tgbSo">
+    <mxGraphModel dx="1191" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-15" parent="1" style="swimlane;html=1;startSize=20;horizontal=0;resizable=0;fontSize=12;transparentBounds=1;groupPadding=20;containerType=tree;childLayout=%5B%7B%22layout%22%3A%22elkTree%22%2C%22config%22%3A%7B%22elk.direction%22%3A%22RIGHT%22%2C%22elk.spacing.nodeNode%22%3A%2240%22%2C%22elk.spacing.edgeNode%22%3A%2220%22%2C%22elk.padding%22%3A%22%5Btop%3D20%2Cleft%3D40%2Cbottom%3D20%2Cright%3D20%5D%22%2C%22corners%22%3A%22rounded%22%2C%22resizeLayoutRoot%22%3Atrue%2C%22resizeNodes%22%3Afalse%7D%7D%5D;" value="Horizontal Tree Layout" vertex="1">
+          <mxGeometry height="950" width="750" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-16" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;" value="&lt;b&gt;CanvaCraft Studio&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;(Web UMKM)&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54.5" width="100" x="160" y="425.75" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-17" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;" value="INDEX.HTML" vertex="1">
+          <mxGeometry height="40" width="100" x="300" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-18" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;" value="ASSETS" vertex="1">
+          <mxGeometry height="40" width="100" x="300" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-19" edge="1" parent="tsJ2hRlkkarEy5yjuzNP-15" source="tsJ2hRlkkarEy5yjuzNP-16" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="tsJ2hRlkkarEy5yjuzNP-17" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="453" />
+              <mxPoint x="298.68" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-20" edge="1" parent="tsJ2hRlkkarEy5yjuzNP-15" source="tsJ2hRlkkarEy5yjuzNP-16" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="tsJ2hRlkkarEy5yjuzNP-18" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="453" />
+              <mxPoint x="298.68" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-21" edge="1" parent="tsJ2hRlkkarEy5yjuzNP-15" source="tsJ2hRlkkarEy5yjuzNP-16" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="tsJ2hRlkkarEy5yjuzNP-22" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="453" />
+              <mxPoint x="298.68" y="304" />
+            </Array>
+            <mxPoint x="260" y="270" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-22" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;" value="DOCS" vertex="1">
+          <mxGeometry height="40" width="100" x="300" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-23" edge="1" parent="tsJ2hRlkkarEy5yjuzNP-15" source="tsJ2hRlkkarEy5yjuzNP-16" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="tsJ2hRlkkarEy5yjuzNP-24" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="453" />
+              <mxPoint x="280" y="384" />
+            </Array>
+            <mxPoint x="260" y="310" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-24" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;" value="DATABASE" vertex="1">
+          <mxGeometry height="40" width="100" x="300" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-25" edge="1" parent="tsJ2hRlkkarEy5yjuzNP-15" source="tsJ2hRlkkarEy5yjuzNP-16" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="tsJ2hRlkkarEy5yjuzNP-26" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="453" />
+              <mxPoint x="280" y="532" />
+            </Array>
+            <mxPoint x="260" y="300" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-26" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;" value="LANDINGPAGE" vertex="1">
+          <mxGeometry height="40" width="100" x="300" y="512" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-27" edge="1" parent="tsJ2hRlkkarEy5yjuzNP-15" source="tsJ2hRlkkarEy5yjuzNP-18" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="tsJ2hRlkkarEy5yjuzNP-28" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="210" />
+              <mxPoint x="420.13" y="210" />
+            </Array>
+            <mxPoint x="260" y="290" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-28" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;CSS&lt;/li&gt;&lt;li&gt;IMG&lt;/li&gt;&lt;li&gt;JS&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="67.5" width="100" x="490" y="176.25" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-29" edge="1" parent="tsJ2hRlkkarEy5yjuzNP-15" source="tsJ2hRlkkarEy5yjuzNP-22" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="tsJ2hRlkkarEy5yjuzNP-30" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="304" />
+              <mxPoint x="420.13" y="304" />
+            </Array>
+            <mxPoint x="260" y="290" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-30" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;TRIDIAGRAM&lt;/li&gt;&lt;li&gt;MATERI&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="40" width="135" x="472.5" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-31" edge="1" parent="tsJ2hRlkkarEy5yjuzNP-15" source="tsJ2hRlkkarEy5yjuzNP-24" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="tsJ2hRlkkarEy5yjuzNP-32" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="384" />
+              <mxPoint x="420.13" y="384" />
+            </Array>
+            <mxPoint x="260" y="293" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-32" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;" value="CanvaCraft Studio.sql" vertex="1">
+          <mxGeometry height="40" width="100" x="490" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-33" edge="1" parent="tsJ2hRlkkarEy5yjuzNP-15" source="tsJ2hRlkkarEy5yjuzNP-26" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="tsJ2hRlkkarEy5yjuzNP-34" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="532" />
+              <mxPoint x="420.13" y="532" />
+            </Array>
+            <mxPoint x="260" y="293" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-34" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;align=left;" value="&lt;ol&gt;&lt;li&gt;Beranda.html&lt;/li&gt;&lt;li&gt;Kategori.html&lt;/li&gt;&lt;li&gt;Produk.html&lt;/li&gt;&lt;li&gt;Detailproduk.html&lt;/li&gt;&lt;li&gt;Faq.html&lt;/li&gt;&lt;li&gt;Kontak.html&lt;/li&gt;&lt;li&gt;Legalitas.html&lt;/li&gt;&lt;li&gt;LoginPelanggan.html&lt;/li&gt;&lt;li&gt;RegisterPelanggan.html&lt;/li&gt;&lt;li&gt;LoginUser.html&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="176.04" width="180" x="450" y="443.98" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-35" edge="1" parent="tsJ2hRlkkarEy5yjuzNP-15" source="tsJ2hRlkkarEy5yjuzNP-16" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="tsJ2hRlkkarEy5yjuzNP-36" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="453" />
+              <mxPoint x="298.68" y="688" />
+            </Array>
+            <mxPoint x="260" y="329" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-36" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;" value="Zona User" vertex="1">
+          <mxGeometry height="40" width="100" x="300" y="668" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-37" edge="1" parent="tsJ2hRlkkarEy5yjuzNP-15" source="tsJ2hRlkkarEy5yjuzNP-36" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="tsJ2hRlkkarEy5yjuzNP-38" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="688" />
+            </Array>
+            <mxPoint x="260" y="369" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-38" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;align=left;" value="&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;DashboardPelanggan.html&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;RiwayatPembelian.html&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Laporan.html&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="57" width="199.75" x="440.13" y="659.5" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-39" edge="1" parent="tsJ2hRlkkarEy5yjuzNP-15" source="tsJ2hRlkkarEy5yjuzNP-16" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="tsJ2hRlkkarEy5yjuzNP-40" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="453" />
+              <mxPoint x="298.68" y="777" />
+            </Array>
+            <mxPoint x="260" y="415" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-40" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;" value="Zona Pelanggan" vertex="1">
+          <mxGeometry height="40" width="100" x="300" y="757" as="geometry" />
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-41" edge="1" parent="tsJ2hRlkkarEy5yjuzNP-15" source="tsJ2hRlkkarEy5yjuzNP-40" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="tsJ2hRlkkarEy5yjuzNP-42" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="777" />
+            </Array>
+            <mxPoint x="260" y="455" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tsJ2hRlkkarEy5yjuzNP-42" parent="tsJ2hRlkkarEy5yjuzNP-15" style="whiteSpace=wrap;html=1;align=left;" value="&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;DashboardPelanggan.html&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;RiwayatPembelian.html&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="40" width="190" x="445" y="757" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
