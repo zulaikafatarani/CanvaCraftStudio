@@ -1,48 +1,55 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Pelanggan - CanvaCraftStudio</title>
-    <link rel="stylesheet" href="../../ASSETS/1.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo">CanvaCraftStudio</div>
-        <div class="menu-toggle"><span></span><span></span><span></span></div>
-        <ul class="nav-links">
-            <li><a href="beranda.html">Beranda</a></li>
-            <li><a href="kategori.html">Kategori</a></li>
-            <li><a href="produk.html">Produk</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
-            <li><a href="legalitas.html">Legalitas</a></li>
-            <li><a href="loginpelanggan.html" class="active">Login Pelanggan</a></li>
-            <li><a href="loginuser.html">Login Admin</a></li>
-        </ul>
-    </nav>
-
-    <main class="container">
-        <div class="form-box">
-            <h2 style="text-align: center; margin-bottom: 1.5rem;">Login Pelanggan</h2>
-            <form action="../pelanggan/dashboardpelanggan.html" method="GET">
-                <div class="form-group">
-                    <label>Email Pelanggan</label>
-                    <input type="email" class="form-control" required placeholder="masukkan email anda">
-                </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" required placeholder="******">
-                </div>
-                <button type="submit" class="btn" style="width: 100%;">Masuk</button>
-            </form>
-            <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem;">
-                Belum punya akun? <a href="registerpelanggan.html" style="color:#1abc9c; font-weight:bold;">Daftar Disini</a>
-            </p>
-        </div>
-    </main>
-
-    <footer><p>&copy; 2026 CanvaCraftStudio. All Rights Reserved.</p></footer>
-    <script src="../../ASSETS/1.js"></script>
-</body>
+<!DOCTYPE html> 
+<html lang="id"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Login Pelanggan - CanvaCraftStudio</title> 
+    <!-- PERBAIKAN 1: Jalur CSS diselaraskan dengan susunan sub-folder assets/css/ --> 
+    <link rel="stylesheet" href="../../ASSETS/1.css"> 
+</head> 
+<body> 
+    <nav class="navbar"> 
+        <div class="logo">CanvaCraftStudio</div> 
+        <div class="menu-toggle"><span></span><span></span><span></span></div> 
+        <ul class="nav-links"> 
+            <li><a href="beranda.html">Beranda</a></li> 
+            <li><a href="kategori.html">Kategori</a></li> 
+            <li><a href="produk.html">Produk</a></li> 
+            <li><a href="faq.html">FAQ</a></li> 
+            <li><a href="kontak.html">Kontak</a></li> 
+            <li><a href="legalitas.html">Legalitas</a></li> 
+            <li><a href="loginpelanggan.html" class="active">Login Pelanggan</a></li> 
+            <li><a href="loginuser.html">Login Admin</a></li> 
+        </ul> 
+    </nav> 
+    
+    <main class="container"> 
+        <div class="form-box"> 
+            <h2 style="text-align: center; margin-bottom: 1.5rem;">Login Pelanggan</h2> 
+            
+            <!-- PERBAIKAN 2: action diubah ke huruf kecil sesuai direktori tree ../pelanggan/dashboardpelanggan.html -->
+            <form action="../PELANGGAN/DashboardPelanggan.html" method="GET"> 
+                <div class="form-group"> 
+                    <label>Email Pelanggan</label> 
+                    <input type="email" class="form-control" required placeholder="masukkan email anda"> 
+                </div> 
+                <div class="form-group"> 
+                    <label>Password</label> 
+                    <input type="password" class="form-control" required placeholder="******"> 
+                </div> 
+                <button type="submit" class="btn" style="width: 100%;">Masuk</button> 
+            </form> 
+            
+            <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem;"> 
+                Belum punya akun? 
+                <!-- PERBAIKAN 3: href diubah menjadi huruf kecil registerpelanggan.html -->
+                <a href="registerpelanggan.html" style="color:#1abc9c; font-weight:bold;">Daftar Disini</a> 
+            </p> 
+        </div> 
+    </main> 
+    
+    <footer><p>&copy; 2026 CanvaCraftStudio. All Rights Reserved.</p></footer> 
+    <!-- PERBAIKAN 1: Jalur JS diselaraskan dengan sub-folder assets/js/ -->
+    <script src="../../ASSETS/1.js"></script> 
+</body> 
 </html>

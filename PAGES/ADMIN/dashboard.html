@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - CanvaCraftStudio</title>
+    <!-- Path disesuaikan dengan tree: keluar 2x ke root, masuk ke assets/css/1.css -->
+    <link rel="stylesheet" href="../../ASSETS/1.css">
+    <style>
+        /* Pengaturan Layout Utama Dashboard Admin */
+        .admin-wrapper { 
+            display: flex; 
+            gap: 20px; 
+            margin-top: 2rem; 
+        }
+        
+        /* Menu Sidebar Kiri */
+        .sidebar { 
+            width: 250px; 
+            background: #34495e; 
+            padding: 1.5rem; 
+            border-radius: 8px; 
+            color: white; 
+            height: fit-content;
+        }
+        .sidebar h3 {
+            margin-bottom: 1.5rem;
+            color: #1abc9c;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .sidebar ul { 
+            list-style: none; 
+        }
+        .sidebar ul li { 
+            margin-bottom: 0.8rem; 
+        }
+        .sidebar ul li a { 
+            display: block; 
+            padding: 0.6rem; 
+            border-radius: 4px; 
+            transition: 0.3s; 
+            color: #ecf0f1;
+        }
+        .sidebar ul li a:hover, .sidebar ul li a.active { 
+            background: #1abc9c; 
+            color: white; 
+            font-weight: bold;
+        }
+        
+        /* Konten Utama Sebelah Kanan */
+        .main-content { 
+            flex: 1; 
+            background: white; 
+            padding: 2rem; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+        }
+
+        /* Modifikasi Card Khusus Angka Statistik */
+        .stat-card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .stat-number {
+            font-size: 2.8rem; 
+            margin: 0.5rem 0; 
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        /* Responsif untuk Smartphone & Tablet Kecil */
+        @media (max-width: 768px) { 
+            .admin-wrapper { 
+                flex-direction: column; 
+            } 
+            .sidebar { 
+                width: 100%; 
+            } 
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Atas Admin Panel -->
+    <nav class="navbar">
+        <div class="logo">CanvaCraftStudio Panel</div>
+        <ul class="nav-links">
+            <li><a href="../landing/beranda.html">Lihat Website</a></li>
+            <li><a href="../landing/beranda.html" style="color: #e74c3c; font-weight: bold;">Keluar</a></li>
+        </ul>
+    </nav>
+
+    <div class="container admin-wrapper">
+        <!-- Komponen Sidebar Navigasi Admin -->
+        <aside class="sidebar">
+            <h3>Menu Utama</h3>
+            <ul>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="kelolauser.html">Kelola Admin</a></li>
+                <li><a href="kelolapelanggan.html">Kelola Pelanggan</a></li>
+                <li><a href="kelolakategori.html">Kelola Kategori</a></li>
+                <li><a href="kelolaproduk.html">Kelola Produk</a></li>
+                <li><a href="kelolapenjualan.html">Kelola Penjualan</a></li>
+                <li><a href="keloladiskon.html">Kelola Diskon</a></li>
+                <li><a href="laporan.html">Laporan Transaksi</a></li>
+            </ul>
+        </aside>
+
+        <!-- Komponen Konten Ringkasan Data -->
+        <main class="main-content">
+            <h2 style="color: #2c3e50;">Selamat Datang, Administrator</h2>
+            <p style="color: #7f8c8d; margin-bottom: 2rem;">Berikut adalah ringkasan performa operasional sistem UMKM CanvaCraftStudio.</p>
+            
+            <!-- Menggunakan Grid-3 dari 1.css Anda untuk Kotak Kotak Ringkasan -->
+            <div class="grid-3">
+                <div class="card" style="background: #e8f8f5; border-top: 4px solid #1abc9c;">
+                    <span class="stat-card-title" style="color: #16a085;">Total Produk Aktif</span>
+                    <div class="stat-number">5</div>
+                    <p style="font-size: 0.85rem; color: #7f8c8d;">Katalog Live di Etalase</p>
+                </div>
+                <div class="card" style="background: #fef9e7; border-top: 4px solid #f39c12;">
+                    <span class="stat-card-title" style="color: #d35400;">Pesanan Masuk</span>
+                    <div class="stat-number">12</div>
+                    <p style="font-size: 0.85rem; color: #7f8c8d;">Perlu Verifikasi Manual</p>
+                </div>
+                <div class="card" style="background: #ebf5fb; border-top: 4px solid #3498db;">
+                    <span class="stat-card-title" style="color: #2980b9;">Pelanggan Terdaftar</span>
+                    <div class="stat-number">84</div>
+                    <p style="font-size: 0.85rem; color: #7f8c8d;">Akun Konsumen Aktif</p>
+                </div>
+            </div>
+
+            <!-- Bagian Info Tambahan Log Singkat -->
+            <div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px dashed #ddd;">
+                <h3 style="color: #2c3e50; margin-bottom: 0.5rem;">Catatan Sistem</h3>
+                <p style="color: #7f8c8d; font-size: 0.95rem;">Situs web ini berjalan dalam **Mode Pengembangan HTML Statis**. Seluruh data angka di atas merupakan indikator contoh untuk keperluan demonstrasi tugas visual di hadapan dosen pembimbing.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer><p>&copy; 2026 CanvaCraftStudio. Admin Area Workspace.</p></footer>
+</body>
+</html>

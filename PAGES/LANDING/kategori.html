@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kategori - CanvaCraftStudio</title>
+    <!-- Path disesuaikan dengan tree: keluar 2x ke root, masuk ke assets/css/1.css -->
     <link rel="stylesheet" href="../../ASSETS/1.css">
+    <style>
+        .category-section { margin-top: 3rem; margin-bottom: 3rem; }
+        .category-title { border-left: 5px solid #1abc9c; padding-left: 10px; margin-bottom: 1.5rem; color: #2c3e50; }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -23,27 +28,62 @@
     </nav>
 
     <main class="container">
-        <h2 style="margin-bottom: 2rem; text-align: center;">Kategori Kreatif Kami</h2>
-        <div class="grid-3">
-            <div class="card">
-                <h2>Template Media Sosial</h2>
-                <p>Koleksi template Instagram, Facebook, dan TikTok siap pakai.</p>
-                <a href="produk.html" class="btn">Lihat Koleksi</a>
+        <h2 style="margin-bottom: 1rem; text-align: center;">Kategori Kreatif Kami</h2>
+        <p style="text-align: center; color: #7f8c8d; margin-bottom: 3rem;">Pilih kategori solusi desain instan untuk pertumbuhan bisnis digital UMKM Anda.</p>
+        
+        <!-- SEGMEN KATEGORI 1 -->
+        <section class="category-section">
+            <h3 class="category-title">Template Media Sosial</h3>
+            <div class="grid-3">
+                <div class="card">
+                    <img src="../../ASSETS/img/feedbusinesIG.avif" alt="Template Instagram" onerror="this.src='https://placehold.co'">
+                    <h3 style="margin-top: 1rem;">Template Instagram Feed Business</h3>
+                    <p style="color: #1abc9c; font-weight: bold; margin: 0.5rem 0;">Rp 50.000</p>
+                    <a href="Detailproduk-feedIG.html" class="btn">Selengkapnya</a>
+                </div>
             </div>
-            <div class="card">
-                <h2>Branding Kit</h2>
-                <p>Logo, kartu nama, kop surat, dan aset identitas visual bisnis.</p>
-                <a href="produk.html" class="btn">Lihat Koleksi</a>
+        </section>
+
+        <!-- SEGMEN KATEGORI 2 -->
+        <section class="category-section">
+            <h3 class="category-title">Branding Kit & Desain Komersial</h3>
+            <div class="grid-3">
+                <div class="card">
+                    <img src="../../ASSETS/img/logo.png" alt="Desain Logo" onerror="this.src='https://placehold.co'">
+                    <h3 style="margin-top: 1rem;">Jasa Desain Logo Bisnis UMKM</h3>
+                    <p style="color: #1abc9c; font-weight: bold; margin: 0.5rem 0;">Rp 80.000</p>
+                    <a href="detaillogo.html" class="btn">Selengkapnya</a>
+                </div>
+                <div class="card">
+                    <img src="../../ASSETS/img/KARTUNAMA.webp" alt="Kartu Nama" onerror="this.src='https://placehold.co'">
+                    <h3 style="margin-top: 1rem;">Kartu Nama Elegan UMKM</h3>
+                    <p style="color: #1abc9c; font-weight: bold; margin: 0.5rem 0;">Rp 35.000</p>
+                    <a href="detailkartunama.html" class="btn">Selengkapnya</a>
+                </div>
             </div>
-            <div class="card">
-                <h2>Cetak Digital</h2>
-                <p>Desain banner, flyer, brosur, dan merch siap cetak tinggi.</p>
-                <a href="produk.html" class="btn">Lihat Koleksi</a>
+        </section>
+
+        <!-- SEGMEN KATEGORI 3 -->
+        <section class="category-section">
+            <h3 class="category-title">Cetak Digital & Packaging</h3>
+            <div class="grid-3">
+                <div class="card">
+                    <img src="../../ASSETS/img/1kemasan.png" alt="Desain Kemasan" onerror="this.src='https://placehold.co'">
+                    <h3 style="margin-top: 1rem;">Desain Stiker Label & Kemasan Produk</h3>
+                    <p style="color: #1abc9c; font-weight: bold; margin: 0.5rem 0;">Rp 120.000</p>
+                    <a href="detailkemasan.html" class="btn">Selengkapnya</a>
+                </div>
+                <div class="card">
+                    <img src="../../ASSETS/img/bannermakanan.webp" alt="Banner Kuliner" onerror="this.src='https://placehold.co'">
+                    <h3 style="margin-top: 1rem;">Desain Banner Spanduk Kuliner</h3>
+                    <p style="color: #1abc9c; font-weight: bold; margin: 0.5rem 0;">Rp 75.000</p>
+                    <a href="detailbanner.html" class="btn">Selengkapnya</a>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer><p>&copy; 2026 CanvaCraftStudio. All Rights Reserved.</p></footer>
-    <script src="../../ASSETS/1.js"></script>
+    <script src="../../assets/js/1.js"></script>
 </body>
 </html>

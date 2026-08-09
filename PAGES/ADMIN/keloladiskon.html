@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laporan Transaksi - Admin CanvaCraftStudio</title>
+    <title>Kelola Diskon - Admin CanvaCraftStudio</title>
     <!-- Path disesuaikan dengan tree: keluar 2x ke root, masuk ke assets/css/1.css -->
     <link rel="stylesheet" href="../../ASSETS/1.css">
     <style>
@@ -18,15 +18,19 @@
         .main-content { flex: 1; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         .admin-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 15px; }
         
-        /* Gaya Tabel Laporan */
+        /* Gaya Tabel Manajemen Data Admin */
         .table-responsive { width: 100%; overflow-x: auto; }
         .admin-table { width: 100%; border-collapse: collapse; min-width: 650px; margin-top: 1rem; }
         .admin-table th, .admin-table td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #e0e0e0; }
         .admin-table th { background-color: #2c3e50; color: white; font-weight: 600; }
+        .admin-table tr:hover { background-color: #fcfcfc; }
         
-        /* Modifikasi Card Ringkasan Finansial */
-        .report-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 2rem; }
-        .report-card { background: #f8f9fa; padding: 1rem; border-radius: 6px; border-left: 4px solid #1abc9c; }
+        /* Tombol Aksi Mini */
+        .btn-small { padding: 5px 10px; font-size: 0.85rem; border-radius: 4px; display: inline-block; margin-top: 0; margin-right: 5px; color: white; }
+        .btn-danger { background: #e74c3c; }
+        .btn-danger:hover { background: #c0392b; }
+        
+        .badge-discount { padding: 3px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; background: #fef9e7; color: #d35400; }
 
         @media (max-width: 768px) { .admin-wrapper { flex-direction: column; } .sidebar { width: 100%; } .admin-header { flex-direction: column; align-items: flex-start; } }
     </style>
@@ -50,62 +54,52 @@
                 <li><a href="kelolakategori.html">Kelola Kategori</a></li>
                 <li><a href="kelolaproduk.html">Kelola Produk</a></li>
                 <li><a href="kelolapenjualan.html">Kelola Penjualan</a></li>
-                <li><a href="keloladiskon.html">Kelola Diskon</a></li>
-                <li><a href="laporan.html" class="active">Laporan Transaksi</a></li>
+                <li><a href="keloladiskon.html" class="active">Kelola Diskon</a></li>
+                <li><a href="laporan.html">Laporan Transaksi</a></li>
             </ul>
         </aside>
 
         <main class="main-content">
             <div class="admin-header">
                 <div>
-                    <h2>Laporan Omset & Pendapatan</h2>
-                    <p style="color: #7f8c8d; margin-top: 5px;">Rekapitulasi berkas total riwayat penjualan untuk pembimbing / owner.</p>
+                    <h2>Manajemen Kupon Diskon & Promo</h2>
+                    <p style="color: #7f8c8d; margin-top: 5px;">Atur potongan harga untuk menarik minat belanja pelaku UMKM.</p>
                 </div>
-                <!-- Menggunakan fungsi cetak bawaan browser untuk demonstrasi interaktif -->
-                <button class="btn" style="margin-top: 0;" onclick="window.print()">🖨️ Cetak Laporan (PDF)</button>
-            </div>
-
-            <!-- Ringkasan Singkat Keuangan Statis -->
-            <div class="report-summary">
-                <div class="report-card">
-                    <span style="font-size: 0.85rem; color: #7f8c8d;">Total Omset Masuk</span>
-                    <h3 style="color: #2c3e50; margin-top: 5px;">Rp 170.000</h3>
-                </div>
-                <div class="report-card" style="border-left-color: #3498db;">
-                    <span style="font-size: 0.85rem; color: #7f8c8d;">Transaksi Berhasil</span>
-                    <h3 style="color: #2c3e50; margin-top: 5px;">2 Pesanan</h3>
-                </div>
-                <div class="report-card" style="border-left-color: #e67e22;">
-                    <span style="font-size: 0.85rem; color: #7f8c8d;">Katalog Terlaris</span>
-                    <h3 style="color: #2c3e50; margin-top: 5px;">Template Instagram</h3>
-                </div>
+                <a href="#" class="btn" style="margin-top: 0;">+ Buat Voucher Baru</a>
             </div>
 
             <div class="table-responsive">
                 <table class="admin-table">
                     <thead>
                         <tr>
-                            <th>Tanggal</th>
-                            <th>No. Invoice</th>
-                            <th>Nama Produk</th>
-                            <th>Jumlah</th>
-                            <th>Total Pendapatan</th>
+                            <th>No.</th>
+                            <th>Kode Voucher</th>
+                            <th>Potongan Harga</th>
+                            <th>Minimal Pembelian</th>
+                            <th>Status Promo</th>
+                            <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>10 Mar 2026</td>
-                            <td>#CCS-9821</td>
-                            <td>Template Instagram Feed Business</td>
                             <td>1</td>
-                            <td>Rp 50.000</td>
+                            <td><strong style="color: #1abc9c;">UMKMBARU</strong></td>
+                            <td><span class="badge-discount">Diskon 10%</span></td>
+                            <td>Rp 0 (Pengguna Baru)</td>
+                            <td style="color: #2ecc71; font-weight: bold;">Aktif</td>
+                            <td>
+                                <a href="#" class="btn-small btn-danger" onclick="return confirm('Nonaktifkan kode promo ini?')">Matikan</a>
+                            </td>
                         </tr>
                         <tr>
-                            <td>12 Mar 2026</td>
-                            <td>#CCS-9844</td>
-                            <td>Desain Kemasan Keripik / Snack</td>
-                            <td>1</td>
-                            <td>Rp 120.000</td>
+                            <td>2</td>
+                            <td><strong style="color: #1abc9c;">CRAFTGAJIAN</strong></td>
+                            <td><span class="badge-discount">Potongan Rp 15.000</span></td>
+                            <td>Rp 100.000</td>
+                            <td style="color: #2ecc71; font-weight: bold;">Aktif</td>
+                            <td>
+                                <a href="#" class="btn-small btn-danger" onclick="return confirm('Nonaktifkan kode promo ini?')">Matikan</a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
