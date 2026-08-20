@@ -1,63 +1,85 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda - CanvaCraftStudio</title>
-    <link rel="stylesheet" href="../../ASSETS/1.css">
-   
-</head>
-<body>
+<!DOCTYPE html> 
+<html lang="id"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Beranda - CanvaCraftStudio</title> 
+    <!-- Perbaikan jalur CSS agar mengarah keluar folder ke root assets -->
+    <link rel="stylesheet" href="../../ASSETS/1.css"> 
+</head> 
+<body> 
     <nav class="navbar"> 
         <div class="logo">CanvaCraftStudio - Zulaika Fatarani</div> 
-        <div class="menu-toggle"><span></span><span></span><span></span></div> 
-        <ul class="nav-links"> 
-    <li><a href="../../index.html" class="active">Beranda</a></li> 
-    <li><a href="kategori.html">Kategori</a></li> 
-    <li><a href="PRODUK.html">Produk</a></li> 
-    <li><a href="Faq.html">FAQ</a></li> 
-    <li><a href="Kontak.html">Kontak</a></li> 
-    <li><a href="Legalitas.html">Legalitas</a></li> 
-    <li><a href="LoginPelanggan.html">Login Pelanggan</a></li> 
-    <li><a href="LoginUser.html">Login Admin</a></li> 
-</ul>
-
+        
+        <!-- PERBAIKAN: Menambahkan id="mobile-menu" agar bisa dibaca JS -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> 
+        
+        <!-- PERBAIKAN: Menambahkan id="nav-menu" agar bisa dibaca JS -->
+        <ul class="nav-links" id="nav-menu"> 
+            <!-- Perbaikan jalur tautan menu karena file ini berada di dalam subfolder -->
+            <li><a href="../../index.html" class="active">Beranda</a></li> 
+            <li><a href="kategori.html">Kategori</a></li> 
+            <li><a href="PRODUK.html">Produk</a></li> 
+            <li><a href="Faq.html">FAQ</a></li> 
+            <li><a href="Kontak.html">Kontak</a></li> 
+            <li><a href="Legalitas.html">Legalitas</a></li> 
+            <li><a href="LoginPelanggan.html">Login Pelanggan</a></li> 
+            <li><a href="LoginUser.html">Login Admin</a></li> 
+        </ul>
     </nav> 
 
-    <main class="container">
-        <section class="hero">
-              <div class="hero-image">
-    </div>
-            <h1>Kreativitas Tanpa Batas untuk Bisnis Anda</h1>
-            <p>Sediakan berbagai template desain Canva premium dan kerajinan digital kustom untuk UMKM.</p>
-            <a href="PRODUK.html" class="btn">Jelajahi Produk</a>
-           
-        </section>
+    <main class="container"> 
+        <section class="hero"> 
+            <h1>Kreativitas Tanpa Batas untuk Bisnis Anda</h1> 
+            <p>Sediakan berbagai template desain Canva premium dan kerajinan digital kustom untuk UMKM.</p> 
+            <a href="PRODUK.html" class="btn">Jelajahi Produk</a> 
+        </section> 
+        
+        <h2 style="text-align:center; margin-bottom: 1.5rem;">Produk Unggulan</h2> 
+        
+        <div class="grid-3"> 
+            <div class="card"> 
+                <!-- PERBAIKAN: Jalur gambar mundur 2 kali folder menggunakan ../../ -->
+                <img src="../../ASSETS/img/feedbusinesIG.avif" alt="Produk 1"> 
+                <h3>Template Instagram Feed Business</h3> 
+                <p>Mulai dari Rp 50.000</p> 
+                <a href="Detailproduk-feedIG.html" class="btn">Selengkapnya</a> 
+            </div> 
+            
+            <div class="card"> 
+                <!-- PERBAIKAN: Jalur gambar mundur 2 kali folder menggunakan ../../ -->
+                <img src="../../ASSETS/img/bannermakanan.webp" alt="Produk 2"> 
+                <h3>Desain Banner Spanduk Kuliner</h3> 
+                <p>Mulai dari Rp 75.000</p> 
+                <a href="detailbanner.html" class="btn">Selengkapnya</a> 
+            </div> 
+            
+            <div class="card"> 
+                <!-- PERBAIKAN: Jalur gambar mundur 2 kali folder menggunakan ../../ -->
+                <img src="../../ASSETS/img/KARTUNAMA.webp" alt="Produk 3"> 
+                <h3>Kartu Nama Elegan UMKM</h3> 
+                <p>Mulai dari Rp 35.000</p> 
+                <a href="detailkartunama.html" class="btn">Selengkapnya</a> 
+            </div> 
+        </div> 
+    </main> 
 
-        <h2 style="text-align:center; margin-bottom: 1.5rem;">Produk Unggulan</h2>
-        <div class="grid-3">
-            <div class="card">
-                <img src="../../ASSETS/img/feedbusinesIG.avif" alt="Produk 1" onerror="this.src='https://placeholder.com'">
-                <h3>Template Instagram Feed Business</h3>
-                <p>Mulai dari Rp 50.000</p>
-                <a href="Detailproduk-feedIG.html" class="btn">Selengkapnya</a>
-            </div>
-            <div class="card">
-                <img src="../../ASSETS/img/bannermakanan.webp" alt="Produk 2" onerror="this.src='https://placeholder.com'">
-                <h3>Desain Banner Spanduk Kuliner</h3>
-                <p>Mulai dari Rp 75.000</p>
-                <a href="detailbanner.html" class="btn">Selengkapnya</a>
-            </div>
-            <div class="card">
-                <img src="../../ASSETS/img/KARTUNAMA.webp" alt="Produk 3" onerror="this.src='https://placeholder.com'">
-                <h3>Kartu Nama Elegan UMKM</h3>
-                <p>Mulai dari Rp 35.000</p>
-                <a href="detailkartunama.html" class="btn">Selengkapnya</a>
-            </div>
-        </div>
-    </main>
+    <footer><p>&copy; 2026 CanvaCraftStudio. All Rights Reserved.</p></footer> 
 
-    <footer><p>&copy; 2026 CanvaCraftStudio. All Rights Reserved.</p></footer>
-    <script src="../../ASSETS/1.js"></script>
-</body>
+    <!-- SCRIPT JAVASCRIPT LANGSUNG UNTUK MENUNJANG NAVBAR MOBILE -->
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-menu');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body> 
 </html>
