@@ -32,20 +32,23 @@ a { text-decoration: none; color: inherit; }
 
 /* Responsive Navbar */
 @media (max-width: 992px) {
-    .nav-links {
+     .nav-links {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 100%; left: 0; width: 100%;
-        background: #2c3e50; padding: 1rem; text-align: center;
+        background: #2c3e50; 
+        padding: 0.5rem 0; /* PERBAIKAN: Jarak atas-bawah seluruh box menu diperkecil */
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Tambahan efek bayangan biar elegan */
     }
    .nav-links li {
         width: 100%;
-        padding: 10px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Garis pembatas tipis antar menu */
+        padding: 6px 0; /* PERBAIKAN: Jarak baris tiap menu diperkecil agar lebih tipis */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Garis pembatas dibuat lebih samar */
     }
     .nav-links li:last-child {
-        border-bottom: none; /* Menghilangkan garis di menu paling bawah */
+        border-bottom: none; 
     }
     
     .nav-links.active { display: flex; }
