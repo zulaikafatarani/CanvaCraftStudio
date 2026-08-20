@@ -31,10 +31,19 @@
 <body> 
     <nav class="navbar"> 
         <div class="logo">CanvaCraftStudio - Zulaika Fatarani</div> 
-        <ul class="nav-links"> 
-            <li><a href="../LANDING/BERANDA.html">Beranda</a></li> 
-            <li><a href="../LANDING/PRODUK.html">Produk Kami</a></li> 
-            <li><a href="../LANDING/BERANDA.html" style="color: #e74c3c;">Logout</a></li> 
+        
+        <!-- PERBAIKAN: Menambahkan tombol hamburger khusus menu mobile pelanggan -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- PERBAIKAN: Menambahkan id="nav-menu" dan memperbaiki jalur link navigasi -->
+        <ul class="nav-links" id="nav-menu"> 
+            <li><a href="../../index.html">Beranda</a></li> 
+            <li><a href="PRODUK.html">Produk Kami</a></li> 
+            <li><a href="../../index.html" style="color: #e74c3c; font-weight: bold;">Logout</a></li> 
         </ul> 
     </nav> 
     
@@ -75,6 +84,19 @@
             </div> 
         </main> 
     </div> 
+    
     <footer><p>&copy; 2026 CanvaCraftStudio. All Rights Reserved.</p></footer> 
+
+    <!-- PERBAIKAN: Menambahkan script langsung agar tombol hamburger aktif di handphone -->
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-menu');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
 </body> 
 </html>

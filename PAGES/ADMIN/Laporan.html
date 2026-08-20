@@ -34,9 +34,18 @@
 <body>
     <nav class="navbar">
         <div class="logo">CanvaCraftStudio Panel</div>
-        <ul class="nav-links">
-            <li><a href="../LANDING/BERANDA.html">Lihat Website</a></li>
-            <li><a href="../LANDING/BERANDA.html" style="color: #e74c3c; font-weight: bold;">Keluar</a></li>
+        
+        <!-- PERBAIKAN: Menambahkan tombol hamburger khusus menu admin -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- PERBAIKAN: Menambahkan id="nav-menu" dan menyelaraskan jalur keluar ke index.html root -->
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="../../index.html">Lihat Website</a></li>
+            <li><a href="../../index.html" style="color: #e74c3c; font-weight: bold;">Keluar</a></li>
         </ul>
     </nav>
 
@@ -114,5 +123,17 @@
     </div>
 
     <footer><p>&copy; 2026 CanvaCraftStudio. Admin Panel View.</p></footer>
+
+    <!-- PERBAIKAN: Menambahkan script langsung agar menu atas responsif bekerja di smartphone -->
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-menu');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>
