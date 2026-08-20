@@ -71,7 +71,39 @@ a { text-decoration: none; color: inherit; }
 
 /* Layout Utilities */
 .container { width: 90%; max-width: 1200px; margin: 2rem auto; padding: 1rem; }
-.hero { text-align: center; padding: 4rem 1rem; background: #eef2f3; border-radius: 8px; margin-bottom: 2rem; }
+
+/* PERBAIKAN TOTAL: Hero Section dengan Foto Latar Belakang Gelap */
+.hero { 
+    text-align: center; 
+    padding: 8rem 2rem; /* Memperlebar ruang atas-bawah agar terkesan luas seperti contoh */
+    
+    /* LAPISAN OVERLAY GELAP: Menggunakan lapisan hitam transparan (0.55) agar teks putih menonjol */
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('img/hero-bg.jpg'); 
+
+    background-size: cover;        /* Memaksa foto memenuhi ruang tanpa pecah atau gepeng */
+    background-position: center;    /* Memastikan titik tengah foto berada tepat di tengah */
+    background-repeat: no-repeat;   /* Mencegah gambar terulang */
+    border-radius: 8px; 
+    margin-bottom: 2rem; 
+}
+
+/* Mengubah warna Teks Judul Utama di dalam Hero menjadi Putih Cerah */
+.hero h1 {
+    color: #ffffff !important;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Menambah bayangan teks agar lebih tegas */
+}
+
+/* Mengubah warna Teks Deskripsi di bawah Judul menjadi Putih Soft */
+.hero p {
+    color: #eaedd1 !important; /* Warna putih gading soft agar nyaman dibaca */
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
 .btn { display: inline-block; background: #1abc9c; color: white; padding: 0.5rem 1.5rem; border-radius: 5px; margin-top: 1rem; transition: 0.3s; border: none; cursor: pointer;}
 .btn:hover { background: #16a085; }
 
@@ -85,6 +117,17 @@ a { text-decoration: none; color: inherit; }
 .form-group { margin-bottom: 1.2rem; }
 .form-group label { display: block; margin-bottom: 0.5rem; font-weight: bold; }
 .form-control { width: 100%; padding: 0.7rem; border: 1px solid #ccc; border-radius: 5px; }
+
+/* Perbaikan Khusus untuk Tombol Akses Link Canva di Tabel Pelanggan */
+.table-responsive table td .btn {
+    display: inline-block !important;
+    white-space: nowrap !important; /* Mengunci teks agar tidak pecah menjadi 2 baris */
+    padding: 8px 14px !important;   /* Memberikan ruang udara yang proporsional di dalam tombol */
+    font-size: 0.85rem !important;  /* Ukuran huruf yang ideal untuk dibaca di layar HP */
+    border-radius: 4px !important;  /* Lengkungan sudut tombol yang halus */
+    width: max-content !important;  /* Memaksa lebar tombol melebar otomatis mengikuti teks */
+    text-align: center !important;
+}
 
 /* Footer */
 footer { background: #2c3e50; color: white; text-align: center; padding: 1.5rem; margin-top: 4rem; }
