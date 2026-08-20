@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Produk Baru - Admin CanvaCraftStudio</title>
+    <!-- Menghubungkan ke file CSS utama Anda (Mundur 3 tingkat ke root) -->
+    <link rel="stylesheet" href="../../../ASSETS/1.css"> 
+</head>
+<body>
+
+    <!-- 1. BAGIAN NAVBAR ADMIN -->
+    <nav class="navbar">
+        <div class="logo">CanvaCraftStudio Panel</div>
+        
+        <!-- Tombol menu hamburger untuk responsif mobile -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- Daftar menu navbar atas -->
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="../../../index.html">Lihat Website</a></li>
+            <li><a href="../dashboard.html">Dashboard</a></li>
+            <li><a href="../../../index.html" style="color: #e74c3c; font-weight: bold;">Keluar</a></li>
+        </ul>
+    </nav>
+
+    <!-- 2. BAGIAN FORM INPUT PRODUK BARU -->
+    <div class="container">
+        <div class="form-box" style="margin-top: 2rem; border-top: 5px solid #1abc9c;">
+            <h2 style="margin-bottom: 0.5rem; color: #2c3e50;">Tambah Produk Baru</h2>
+            <p style="color: #7f8c8d; font-size: 0.9rem; margin-bottom: 1.5rem;">Silakan isi detail data katalog produk baru untuk dipajang di etalase UMKM.</p>
+            
+            <!-- Saat disubmit akan otomatis memunculkan simulasi alert dan kembali ke kelolaproduk.html -->
+            <form action="../kelolaproduk.html" method="GET" onsubmit="alert('Produk Baru Berhasil Ditambahkan ke Katalog Etalase! (Simulasi Data)');">
+                
+                <!-- Input Nama Produk -->
+                <div class="form-group">
+                    <label>Nama Produk</label>
+                    <input type="text" class="form-control" placeholder="Masukkan nama produk desain..." required>
+                </div>
+
+                <!-- Pilihan Kategori Produk -->
+                <div class="form-group">
+                    <label>Kategori</label>
+                    <select class="form-control" required>
+                        <option value="">-- Pilih Kategori --</option>
+                        <option value="Template Sosial Media">Template Sosial Media</option>
+                        <option value="Branding Kit">Branding Kit</option>
+                        <option value="Cetak Digital & Packaging">Cetak Digital & Packaging</option>
+                    </select>
+                </div>
+
+                <!-- Input Harga Produk -->
+                <div class="form-group">
+                    <label>Harga Produk (Rp)</label>
+                    <input type="text" class="form-control" placeholder="Contoh: Rp 50.000" required>
+                </div>
+
+                <!-- Input Unggah Gambar Produk -->
+                <div class="form-group">
+                    <label>Gambar Sampul Produk</label>
+                    <input type="file" class="form-control" accept="image/*" required style="padding: 0.5rem;">
+                </div>
+
+                <!-- Tombol Aksi -->
+                <div style="display: flex; gap: 10px; margin-top: 2rem;">
+                    <button type="submit" class="btn" style="flex: 1; margin-top: 0;">Simpan Produk</button>
+                    <a href="../kelolaproduk.html" class="btn" style="flex: 1; margin-top: 0; background: #95a5a6; text-align: center; display: flex; justify-content: center; align-items: center; text-decoration: none; color: white;">Batal</a>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <!-- 3. BAGIAN FOOTER -->
+    <footer><p>&copy; 2026 CanvaCraftStudio. Admin Panel View.</p></footer>
+
+    <!-- 4. JAVASCRIPT UNTUK NAVBAR MOBILE SLIDE SAMPING -->
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-menu');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
