@@ -10,7 +10,7 @@
 <body> 
     <nav class="navbar"> 
         <div class="logo">Login - CanvaCraftStudio</div> 
-        <div class="menu-toggle"><span></span><span></span><span></span></div> 
+         <div class="menu-toggle" id="mobile-menu"></div><span></span><span></span><span></span></div> 
          <ul class="nav-links"> 
             <li><a href="BERANDA.html">Beranda</a></li> 
             <li><a href="kategori.html">Kategori</a></li> 
@@ -50,6 +50,15 @@
     
     <footer><p>&copy; 2026 CanvaCraftStudio. All Rights Reserved.</p></footer> 
     <!-- PERBAIKAN 1: Jalur JS diselaraskan dengan sub-folder assets/js/ -->
-    <script src="../../ASSETS/1.js"></script> 
+  <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-menu');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
 </body> 
 </html>

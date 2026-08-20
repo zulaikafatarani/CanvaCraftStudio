@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar">
         <div class="logo">Detail Feed IG - CanvaCraftStudio</div>
-        <div class="menu-toggle"><span></span><span></span><span></span></div>
+       <div class="menu-toggle" id="mobile-menu"></div><span></span><span></span><span></span></div>
      <ul class="nav-links" id="nav-menu"> 
     <!-- PERBAIKAN: Mundur 2 kali ke luar folder untuk mencari index.html utama -->
     <li><a href="../../index.html">Beranda</a></li> 
@@ -51,6 +51,15 @@
     </main>
 
     <footer><p>&copy; 2026 CanvaCraftStudio. All Rights Reserved.</p></footer>
-    <script src="../../ASSETS/1.js"></script>
+    <script > 
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-menu');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>
