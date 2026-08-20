@@ -17,7 +17,7 @@
     <nav class="navbar">
         <div class="logo">Detail Kartu Nama- CanvaCraftStudio</div>
         
-        <!-- PERBAIKAN: Menambahkan id="mobile-menu" agar tombol bisa merespons klik di HP -->
+        <!-- Tombol hamburger untuk merespons klik di HP -->
         <div class="menu-toggle" id="mobile-menu">
             <span></span>
             <span></span>
@@ -27,8 +27,6 @@
         <ul class="nav-links" id="nav-menu"> 
             <!-- Mundur 2 kali ke luar folder untuk mencari index.html utama -->
             <li><a href="../../index.html">Beranda</a></li> 
-            
-            <!-- Karena sesama file di dalam folder LANDING, langsung panggil nama filenya -->
             <li><a href="kategori.html">Kategori</a></li> 
             <li><a href="PRODUK.html">Produk</a></li> 
             <li><a href="Faq.html">FAQ</a></li> 
@@ -38,6 +36,7 @@
             <li><a href="LoginUser.html">Login Admin</a></li> 
         </ul>
     </nav>
+    
     <main class="container">
         <a href="PRODUK.html" style="color: #1abc9c;">&larr; Kembali ke Produk</a>
         <div class="detail-wrapper">
@@ -55,8 +54,10 @@
             </div>
         </div>
     </main>
+    
     <footer><p>&copy; 2026 CanvaCraftStudio. All Rights Reserved.</p></footer>
-<script>
+
+    <script>
         const menuToggle = document.getElementById('mobile-menu');
         const navLinks = document.getElementById('nav-menu');
 
@@ -65,4 +66,6 @@
                 navLinks.classList.toggle('active');
             });
         }
-    </script></html>
+    </script>
+</body> <!-- PERBAIKAN: Menambahkan tag penutup body yang terlewat -->
+</html>

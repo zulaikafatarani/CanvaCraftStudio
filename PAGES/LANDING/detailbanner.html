@@ -15,9 +15,17 @@
 <body>
     <nav class="navbar">
         <div class="logo">Detail Banner - CanvaCraftStudio</div>
-         <div class="menu-toggle" id="mobile-menu"></div><span></span><span></span><span></span></div>
-        <ul class="nav-links"> 
-            <li><a href="BERANDA.html">Beranda</a></li> 
+        
+        <!-- PERBAIKAN: Memperbaiki susunan tag tombol hamburger yang pecah/rusak -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- PERBAIKAN: Menambahkan id="nav-menu" dan memperbaiki arah link Beranda -->
+        <ul class="nav-links" id="nav-menu"> 
+            <li><a href="../../index.html">Beranda</a></li> 
             <li><a href="kategori.html">Kategori</a></li> 
             <li><a href="PRODUK.html">Produk</a></li> 
             <li><a href="Faq.html">FAQ</a></li> 
@@ -27,27 +35,32 @@
             <li><a href="LoginUser.html">Login Admin</a></li> 
         </ul> 
     </nav>
+    
     <main class="container">
         <a href="PRODUK.html" style="color: #1abc9c;">&larr; Kembali ke Produk</a>
         <div class="detail-wrapper">
             <div class="detail-img">
-                <!-- Ganti dengan path folder gambar spanduk lokal Anda -->
-                <img src="../../ASSETS/img/bannermakanan.webp" alt="Desain Banner Spanduk Kuliner">
-                <img src="../../ASSETS/img/2banner.jpeg" alt="Desain Banner Spanduk Kuliner">
+                <!-- PERBAIKAN: Membersihkan tumpang tindih tag gambar -->
+                <img src="../../ASSETS/img/bannermakanan.webp" alt="Detail Spanduk Banner">
             </div>
             <div class="detail-info">
-                <h1>Desain Banner Spanduk Kuliner Komersial</h1>
+                <h1>Desain Banner Spanduk Kuliner</h1>
                 <h2 style="color: #1abc9c; margin: 1rem 0;">Rp 75.000</h2>
                 <p><strong>Deskripsi Produk:</strong></p>
-                <p>Jasa pembuatan dan file mentahan desain spanduk warung makanan, booth franchise, atau cafe shop. Dikembangkan dengan komposisi warna kontras tinggi penarik perhatian pembeli di jalan raya. Resolusi file tajam dan aman masuk mesin cetak digital printing.</p>
+                <p>Desain banner spanduk profesional untuk lapak kuliner atau restoran UMKM Anda. Dibuat dengan kombinasi warna yang menggugah selera dan tata letak menu yang sangat mudah dibaca pembeli dari kejauhan.</p>
                 <br>
-                <p><strong>Fitur:</strong> File Master Mentahan (.CDR / .PSD / Canva Link), Free 2x Revisi Komponen, Skala Ukuran Bebas Up to 5 Meter.</p>
-                <a href="LoginPelanggan.html" class="btn" style="width: 100%; text-align: center; display: block; background: #1abc9c; color: white; padding: 10px; border-radius: 5px; text-decoration: none;">Beli Sekarang (Silahkan Login)</a>
+                <p><strong>Fitur:</strong> File Siap Cetak (CMYK), Resolusi Tinggi, Termasuk Master Canva Teks Yang Bisa Diedit.</p>
+                <a href="LoginPelanggan.html" class="btn" style="width: 100%; text-align: center; display: block;">Beli Sekarang (Silahkan Login)</a>
             </div>
         </div>
     </main>
-    <footer><p>&copy; 2026 CanvaCraftStudio. All Rights Reserved.</p></footer>
-<script>
+
+    <!-- PERBAIKAN: Melengkapi tag footer dan menyusun javascript penunjang mobile-menu -->
+    <footer>
+        <p>&copy; 2026 CanvaCraftStudio. All Rights Reserved.</p>
+    </footer>
+
+    <script>
         const menuToggle = document.getElementById('mobile-menu');
         const navLinks = document.getElementById('nav-menu');
 
@@ -56,4 +69,6 @@
                 navLinks.classList.toggle('active');
             });
         }
-    </script></html>
+    </script>
+</body>
+</html>

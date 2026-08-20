@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="../../ASSETS/1.css">
     <style>
         .detail-wrapper { display: flex; flex-wrap: wrap; gap: 40px; margin-top: 2rem; }
-        .detail-img { flex: 1; min-width: 300px; }
+        .detail-img { flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 15px; }
         .detail-img img { width: 100%; border-radius: 8px; object-fit: cover; height: 350px; }
         .detail-info { flex: 1; min-width: 300px; }
     </style>
 </head>
 
 <body>
-   
-
-     <nav class="navbar">
-        <div class="logo">Detail Kartu Nama- CanvaCraftStudio</div>
+    <nav class="navbar">
+        <!-- PERBAIKAN: Mengubah teks logo agar sesuai dengan identitas halaman kemasan -->
+        <div class="logo">Detail Kemasan - CanvaCraftStudio</div>
         
-        <!-- PERBAIKAN: Menambahkan id="mobile-menu" agar tombol bisa merespons klik di HP -->
+        <!-- Tombol hamburger untuk merespons klik di HP -->
         <div class="menu-toggle" id="mobile-menu">
             <span></span>
             <span></span>
@@ -30,8 +29,6 @@
         <ul class="nav-links" id="nav-menu"> 
             <!-- Mundur 2 kali ke luar folder untuk mencari index.html utama -->
             <li><a href="../../index.html">Beranda</a></li> 
-            
-            <!-- Karena sesama file di dalam folder LANDING, langsung panggil nama filenya -->
             <li><a href="kategori.html">Kategori</a></li> 
             <li><a href="PRODUK.html">Produk</a></li> 
             <li><a href="Faq.html">FAQ</a></li> 
@@ -41,12 +38,13 @@
             <li><a href="LoginUser.html">Login Admin</a></li> 
         </ul>
     </nav>
+
     <main class="container">
         <a href="PRODUK.html" style="color: #1abc9c;">&larr; Kembali ke Produk</a>
         <div class="detail-wrapper">
             <div class="detail-img">
-                <img src="../../ASSETS/img/1kemasan.png" alt="Desain Stiker Label Kemasan">
-                <img src="../../ASSETS/img/2kemasan.png" alt="Desain Stiker Label Kemasan">
+                <img src="../../ASSETS/img/1kemasan.png" alt="Desain Stiker Label Kemasan 1">
+                <img src="../../ASSETS/img/2kemasan.png" alt="Desain Stiker Label Kemasan 2">
             </div>
             <div class="detail-info">
                 <h1>Desain Stiker Label & Kemasan Produk</h1>
@@ -64,9 +62,13 @@
             </div>
         </div>
     </main>
+
     <footer>
         <p>&copy; 2026 CanvaCraftStudio. All Rights Reserved.</p>
-        <script>
+    </footer>
+
+    <!-- PERBAIKAN: Script dipindah ke posisi yang benar sebelum penutup body (di luar footer) -->
+    <script>
         const menuToggle = document.getElementById('mobile-menu');
         const navLinks = document.getElementById('nav-menu');
 
@@ -76,7 +78,6 @@
             });
         }
     </script>
-    </footer>
 </body>
 
 </html>
