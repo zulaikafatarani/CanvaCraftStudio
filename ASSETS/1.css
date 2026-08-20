@@ -39,6 +39,15 @@ a { text-decoration: none; color: inherit; }
         top: 100%; left: 0; width: 100%;
         background: #2c3e50; padding: 1rem; text-align: center;
     }
+   .nav-links li {
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Garis pembatas tipis antar menu */
+    }
+    .nav-links li:last-child {
+        border-bottom: none; /* Menghilangkan garis di menu paling bawah */
+    }
+    
     .nav-links.active { display: flex; }
     .menu-toggle { display: flex; }
 }
