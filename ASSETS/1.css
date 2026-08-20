@@ -33,26 +33,40 @@ a { text-decoration: none; color: inherit; }
 /* Responsive Navbar */
 @media (max-width: 992px) {
      .nav-links {
-        display: none;
+        display: flex; /* Diubah ke flex agar struktur list tetap terjaga */
         flex-direction: column;
-        position: absolute;
-        top: 100%; left: 0; width: 100%;
+        position: fixed; /* Mengunci menu agar tetap di posisinya saat di-scroll */
+        top: 0; 
+        right: -100%; /* Sembunyikan menu di luar layar sebelah kanan */
+        width: 70%; /* Lebar menu sidebar (70% dari lebar layar HP) */
+        height: 100vh; /* Memenuhi tinggi layar penuh dari atas ke bawah */
         background: #2c3e50; 
-        padding: 0.5rem 0; /* PERBAIKAN: Jarak atas-bawah seluruh box menu diperkecil */
-        text-align: center;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Tambahan efek bayangan biar elegan */
-    }
-   .nav-links li {
-        width: 100%;
-        padding: 6px 0; /* PERBAIKAN: Jarak baris tiap menu diperkecil agar lebih tipis */
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Garis pembatas dibuat lebih samar */
-    }
-    .nav-links li:last-child {
-        border-bottom: none; 
+        padding: 4rem 1.5rem 1.5rem 1.5rem; /* Jarak atas disisakan untuk tombol close */
+        text-align: left; /* Teks menu rata kiri agar lebih rapi seperti contoh */
+        transition: right 0.4s ease; /* Efek animasi meluncur halus selama 0.4 detik */
+        z-index: 999; /* Memastikan menu berada di atas konten lain */
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
     }
     
-    .nav-links.active { display: flex; }
-    .menu-toggle { display: flex; }
+    /* Ketika tombol hamburger diklik, menu bergeser masuk ke layar */
+    .nav-links.active { 
+        right: 0; 
+    }
+    
+    .nav-links li {
+        width: 100%;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+    
+    .menu-toggle { 
+        display: flex; 
+        z-index: 1000; /* Tombol hamburger dipastikan tetap di atas agar bisa diklik ulang */
+    }
 }
 
 /* Layout Utilities */
